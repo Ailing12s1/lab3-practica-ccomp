@@ -18,13 +18,11 @@ int main(){
     cin >> numero;
     int n = 2;
     int encontrados = 0;
-
-    while (encontrados < numero){
-        if (primo(n)){
-            cout << n << " ";
-            encontrados++;
+    cout << "Los números primos hasta " << numero << "son:" << endl;
+    for (int i = 2; i <= numero; i++){
+        if (primo(i)){
+            cout << i << " ";
         }
-        n++
     }   
     cout << endl;
     return 0;
